@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{ 
+    display: flex;
+    justify-content: space-between;
+    height: 10vh ;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255,);
+    padding: 0 20px ;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+    0 4px 4px rgba(0,0,0,0.12),
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}
+
+
+/* hiệu ứng phần name - Logo */
+.nav{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.Name-Logo{
+    display: flex;
+}
+
+#Name-head{
+    /* font-family:Pacifico; */
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+#Name-body{
+    padding-top: 5px;
+    color:  rgb(0, 0, 67);
+    /* margin-top: 5px; */
+}
+
+.teamname{
+    position: relative;
+}
+
+.teamname span{
+    position: absolute;
+    transition: all 0.25s;
+    display: block;
+    background-color:rgb(0, 0, 67);
+    z-index: -1;
+}
+
+#Name-head span:nth-child(1){
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70px;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+    
+}
+
+#Name-body span:nth-child(1){
+    top: 0;
+    left: 0;
+    height:100%;
+    width:0;
+    transition-delay:0.25s ;
+}
+.name-title h6{
+    font-size: 8px;
+    color: rgb(0, 0, 67);
+}
+
+.name:hover #Name-head span{
+    width: 0;
+}
+
+.name:hover #Name-head{
+    color: rgb(0, 0, 67);
+}
+
+.name:hover #Name-body{
+    color:rgb(255, 255, 255);
+    transition: all 0.25s;
+    transition-delay: 0.25s;
+}
+
+.name:hover #Name-body span{
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    background-color: rgb(0, 0, 67);
+    width: 70px;
+}
+
+.name-title{
+    padding-left: 10px;
+    position: relative;
+    transition: all 0.25s ;
+}
+
+.name-title span{
+    position: absolute;
+    border-radius: 10px;
+    background-color:rgb(0, 0, 67);
+    transition: all 0.25s;
+    display: block;
+    z-index: -1;
+}
+.name-title span:nth-child(1){
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 0;
+}
+
+.name:hover .name-title span{
+    width: 100%;
+    transition-delay:0.25s ;
+}
+
+.name:hover .name-title h6{
+    padding-right: 10px;
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+    transition-delay:0.3s ;
+}
+/*  */
+
+
+.menu{
+    display: flex;
+}
+
+.btn-menu{
+    margin: 5px;
+    top:40%;
+    padding: 10px 25px;
+    position: relative;
+    /* width: 100px; */
+}
+.btn{
+    position: relative;
+}
+
+.btn span{
+    position: absolute;
+    background-color: rgb(0, 0, 67);
+    display: block;
+    transition: all 0.25s;
+}
+
+.btn span:nth-child(1){
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+}
+
+.btn:hover span{
+    width: 100%;
+}
+
+.btn span:nth-child(2){
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+}
+
+.btn .select-btn:nth-child(1){
+    width: 100%;
+}
+.btn:hover span{
+    width: 100%;
+}
+.menu:hover .select-btn{
+    width: 0;
+    background-color: none;
+}

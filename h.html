@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <!--  -->
+            <input type="radio" name="radio-bt" id="r1">
+            <input type="radio" name="radio-bt" id="r2">
+            <!--  -->
+            <!--  -->
+            <div class="slide first">
+                <img src="https://mega.com.vn/media/news/0106_hinh-nen-4k-may-tinh12.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <div class="row">
+                <h2>Welcome to our project</h2>
+                <p>đây là web giới thiệu thông tin về các thành viên trong team</p>
+            </div>
+            <!--  -->
+            <div class="navigation-auto">
+                <div class="auto-bt1"></div>
+                <div class="auto-bt2"></div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="navigation-manual">
+                <label for="r1" class="manual-btn" ></label>
+                <label for="r2" class="manual-btn" ></label>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function() {
+            document.getElementById('r'+counter).checked=true;
+            counter++;
+            if(counter>2){
+                counter=1;
+            }
+        },5000)
+    </script>
+</body>
+</html>

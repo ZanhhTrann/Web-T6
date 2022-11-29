@@ -1,0 +1,215 @@
+
+.title{
+    margin:0px 42.2vw;
+    padding-bottom: 50px;
+    color: rgb(0,0,26);
+}
+
+#teck{
+    /* position: relative; */
+    padding: 50px 0;
+    height: 60vh;
+    border-bottom: 1px solid rgb(0,0,26);
+    background-color: rgb(220, 220, 220);
+}
+
+.teck{
+    width: 60%;
+    margin: 0 30%;
+    width: 500px;
+    padding: 20px 40px;
+    /* border: 1px solid black; */
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    /* transition: all 0.25s linear infinite; */
+}
+
+.t-leng{
+    margin: 0 50px;
+}
+
+.preview{
+    top: 20px;
+    right: 100px;
+    position: fixed;
+    width: 700px;
+    height: 500px;
+    border-radius: 25px;
+    border: 1px solid rgb(0,0,26);
+    background-color: rgba(250, 250, 250, 0.385);
+    /* display: none; */
+    z-index: 1;
+}
+
+.border-leng{
+    display: flex;
+}
+
+.border-leng span{
+    background-color: rgb(255, 255, 255);
+    /* animation:trans-height 0.25s alternate infinite; */
+    /* animation:trans-width 0.25s alternate infinite; */
+}
+
+
+.border-leng span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    animation: trans-width 4s 0s infinite;
+}
+
+.border-leng span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+    animation: trans-height 4s 1s  infinite;
+}
+
+.border-leng span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    animation: trans-width 4s 2s  infinite;
+
+}
+
+.border-leng span:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    animation: trans-height 4s 3s  infinite;
+}
+
+@-webkit-keyframes trans-height{
+    from{
+        height: 0;
+    }
+    25%{
+        /* background:none; */
+    }
+    50%{
+        height: 100%;
+    }
+    75%{
+        background:none;
+    }
+    to{
+        height: 0;
+        background:none;
+        
+    }
+}
+
+@-webkit-keyframes trans-width{
+    from{
+        width: 0;
+    }
+    25%{
+        
+    }
+    50%{
+        width: 100%;
+    }
+    75%{
+        background:none;
+    }
+    to{
+        width: 0;
+        background:none;
+    }
+}
+
+/* .border-leng span:nth-child(odd){
+    animation: trans-width 4s   infinite;
+}
+
+.border-leng span:nth-child(even){
+    animation: trans-height 4s  infinite;
+} */
+
+
+
+
+#p-html{
+    display: none;
+    transition: all 0.25s;
+}
+#p-css{
+    display: none;
+    transition: all 0.25s;
+    
+}
+#p-js{
+    display: none;
+    transition: all 0.25s;
+}
+
+iframe{
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+    /* z-index: -1; */
+    /* background: none; */
+}
+
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background: none;
+    background-color: none;
+    animation: tran 1s alternate infinite;
+}
+
+@-webkit-keyframes tran{
+    from{
+        border: 0.5px solid rgb(250, 80, 80);
+    }
+    to{
+        border: 0.5px solid rgb(250, 80, 80);
+        background-color: rgba(252, 140, 140, 0.611);
+        border-radius: 25px;
+        
+    }
+}
+
+
+.t-leng button{
+    border: none;
+    background: none; 
+}
+
+.btn i{
+    cursor: pointer;
+}
+
+.s-title{
+    margin: 50px 42%;
+    animation: color 4s alternate infinite;
+}
+
+@-webkit-keyframes color{
+    from {
+        color: black;
+    }
+    66.66%{
+        color: none;
+    }
+    to{
+        color:aliceblue;
+    }
+}

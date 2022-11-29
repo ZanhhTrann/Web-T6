@@ -1,0 +1,281 @@
+/*  */
+
+.title{
+    margin:50px 45.2vw;
+}
+.slides input{
+    display: none;
+}
+/*  */
+.slider{
+    border: 1px solid black;
+    border-radius: 45px;
+    width: 50vw;
+    margin: 0 25vw;
+    height: 60vh;
+    /* margin: 0 30%; */
+    overflow: hidden;
+    position: relative;
+    /* transition: all 0.25s; */
+    
+}
+/*  */
+
+.slides span{
+    position: absolute;
+    background-color: rgb(0,0,26);
+    z-index: -1;
+    transition: all 0.25s ;
+}
+
+.slider:hover{
+    border: 1px solid rgba(245, 245, 245, 0);
+    transition: all 0.25s;
+}
+
+.slides span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0.25px;
+}
+
+.slides span:nth-child(2){
+    top: 0;
+    right: 0;
+    width: 0.25px;
+    height: 0;
+    transition-delay: 0.25s;
+}
+
+.slides span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0.25px;
+    transition-delay: 0.5s;
+}
+
+.slides span:nth-child(4){
+    bottom: 0;
+    left: 0;
+    width: 0.25px;
+    height: 0;
+    transition-delay: 0.75s;
+
+}
+
+.slider:hover .slides span:nth-child(odd){
+    width: 100%;
+}
+
+.slider:hover .slides span:nth-child(even){
+    height: 100%;
+}
+
+.slides:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    content: "";
+    z-index: -1;
+    background-color: rgb(0,0,26);
+    transition: width 0.25s linear;
+}
+
+.slider:hover .slides:before{
+    width: 100%;
+    transition-delay: 1s;
+}
+
+.slider:hover .slides{
+    color: aliceblue;
+    transition-delay: 0.25s;
+}
+
+.slider:hover .slide{
+    border: 1px solid aliceblue;
+    transition-delay: 0.75s;
+}
+
+.slider:hover .slide .header{
+    color: aliceblue;
+    border-bottom: 1px solid aliceblue;
+    transition: all 0.25s;
+    transition-delay: 1s;
+    
+}
+
+.slider:hover .slide .header .avata{
+    /* margin-left: 50px; */
+    transition-delay: 0.75s;
+    transition: all 0.25s;
+}
+
+.slider:hover .slide .header .head_img{
+    padding-right: 0;
+    padding-left: 50px;
+    transition: all 0.25s;
+    transition-delay: 1s;
+}
+
+.slider:hover .slide .header .card_id{
+    color: aliceblue;
+    padding-left: 100px;
+    transition: all 0.25s;
+    transition-delay: 1s;
+}
+/*  */
+.slides{
+    width:150vw;
+    height: 100%;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+
+.slide{
+    display: block;
+    width: 500px;
+    height: 70%;
+    margin: 60px 125px;
+    transition: 2s;
+    border:1px solid black;
+    border-radius: 25px;
+}
+
+
+.avata{
+    width: 70px;
+    border-radius: 50px;
+}
+
+.head_img{
+    padding-right: 50px;
+    height: 70px;
+    background-color: rgb(193, 193, 193);
+    border-radius:50px ;
+}
+
+.header{
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding:10px 20px ;
+}
+
+.card_id{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.mid{
+    padding: 20px 10px;
+}
+#m3 .header .head_img img{
+    height: 70px;
+    width: 70px;
+}
+.bot{
+    padding: 10px;
+    border: none;
+}
+
+.link_info{
+    margin: 0 20px 0 0;
+    width: 150px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.link_info a i{
+    font-size: 20px;
+    width: 100%;
+    height: 20px;
+    border-radius: 25px;
+}
+
+/*  */
+
+.navigation-manual{
+    position: absolute;
+    width: 50vw;
+    display: flex;
+    justify-content:  center;
+    margin-top: 55vh;
+}
+
+.manual-btn{
+    padding: 5px;
+    border: 2px solid rgb(103, 103, 103);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+
+.manual-btn:hover{
+    background: rgb(80, 80, 80);
+}
+
+#r1:checked~.first{
+    margin-left: 125px;
+
+}
+
+#r2:checked~.first{
+    margin-left: -625px;
+    
+}
+
+#r3:checked~.first{
+    margin-left: -1375px;
+    
+}
+/* auto navigation */
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    margin-top: 55vh;
+}
+
+.navigation-auto div{
+    border: 2px solid rgb(114, 114, 114);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+#r1:checked~.navigation-auto .auto-bt1{
+    background: rgb(214, 88, 38);
+}
+
+#r2:checked~.navigation-auto .auto-bt2{
+    background: rgb(214, 88, 38);
+}
+
+#r3:checked~.navigation-auto .auto-bt3{
+    background: rgb(214, 88, 38);
+    /* border: 1px solid rgb(0,0,36); */
+}
+/*  */
+
+.bottum{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-Top: 2px solid black;
+}

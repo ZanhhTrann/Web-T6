@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slides{
+    width: 200%;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 50%;
+    transition: 2s;
+}
+.slide img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.row{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    color: aliceblue;
+    transition: 2s;
+}
+
+.row:hover{
+    color: rgb(0,0,26);
+    transition: all 2s linear;
+}
+
+.row h2{
+    margin-left:65px ;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 90vh;
+}
+
+.manual-btn{
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+
+.manual-btn:hover{
+    background: white;
+}
+
+#r1:checked~.first{
+    margin-left: 0;
+
+}
+
+#r2:checked~.first{
+    margin-left: -50%;
+    
+}
+/* auto navigation */
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 90vh;
+}
+
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+#r1:checked~.navigation-auto .auto-bt1{
+    background: white;
+}
+
+#r2:checked~.navigation-auto .auto-bt2{
+    background: white;
+}

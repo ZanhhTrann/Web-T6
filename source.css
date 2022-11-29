@@ -1,0 +1,117 @@
+
+#source{
+    width: 80%;
+    height: 80vh;
+    margin: 20px 10%;
+    position: relative;
+}
+
+.title{
+    margin: 40px 400px;
+}
+
+.content{
+    position: absolute;
+    padding: 20px 0;
+    height: 80vh;
+    top: 10px;
+    left: 10%;
+}
+
+iframe{
+    width: 60vw;
+    height: 50vh;
+    position: relative;
+    top: 10px;
+    border-radius: 20px;
+}
+
+.text{
+    position: absolute;
+    padding: 10px 20px;
+}
+
+.select{
+    position: absolute;
+    top:30px;
+    right: 50px;
+    /* display: flex; */
+}
+
+
+.btn-change{
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.46);
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.change{
+    width: 70px;
+    background-color: rgba(240, 248, 255, 0.297);
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.change-text{
+    border: none;
+    background: none;
+    color: aliceblue;
+
+}
+#btn-html:hover~#text-html{
+    display: block;
+}
+#text-html:hover{
+    display: block;
+}
+#btn-css:hover~#text-css{
+    display: block;
+}
+#text-css:hover{
+    display: block;
+}
+
+.change ul li{
+     border-bottom: 1px solid #000;
+}
+
+.change ul li:hover .change-text{
+    padding-left: 30px;
+    transition: all 0.25s linear;
+}
+/*  */
+
+#source_bt{
+    margin-left: 20px;
+}
+
+.sbt{
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+}
+
+#bthtml{
+    background-color: aliceblue;
+    color:rgb(255, 77, 0);
+    border: 1px solid rgb(255, 77, 0);
+}
+
+#btcss{
+    background-color: aliceblue;
+    color:rgb(0, 106, 255);
+    border: 1px solid rgb(0, 106, 255);
+}
+
+#btgid{
+    border: 1px solid black;
+}
+
+/*  */
+.bottum{
+    border-top: 1px solid rgb(0,0,26);
+}
